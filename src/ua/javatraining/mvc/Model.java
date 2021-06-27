@@ -40,12 +40,12 @@ public class Model {
         allUserNumbers.add(userNumber);
         if (userNumber > unknownNumber) {
             maxNumber = userNumber;
-            return View.NUMBER_LESS + "Your previous number(s) - " + allUserNumbers + ". " + View.DIAPASON + "from " + minNumber + " to " + maxNumber;
+            return View.NUMBER_LESS + View.USERNUMBERS + allUserNumbers + ". " + View.DIAPASON + "from " + minNumber + " to " + maxNumber;
         } else if (userNumber < unknownNumber) {
             minNumber = userNumber;
-            return View.NUMBER_GREATER + "Your number(s) - " + allUserNumbers + ". " + View.DIAPASON + "from " + minNumber + " to " + maxNumber;
+            return View.NUMBER_GREATER + View.USERNUMBERS + allUserNumbers + ". " + View.DIAPASON + "from " + minNumber + " to " + maxNumber;
         } else {
-            return View.GUESS + unknownNumber + View.ATTEMPTS + attempts  + "\nYour previous number(s) - " + allUserNumbers + ". ";
+            return View.GUESS + unknownNumber + View.ATTEMPTS + attempts  + View.USERNUMBERS + allUserNumbers;
         }
     }
 

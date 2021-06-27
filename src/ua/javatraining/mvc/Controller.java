@@ -13,7 +13,6 @@ public class Controller {
     }
 
     public void processUser() {
-        view.printMessage(model.getUnknownNumber());
         Scanner sc = new Scanner(System.in);
         view.printMessage(View.LETS_PLAY + "from " + model.getMinNumber() + " to " + model.getMaxNumber());
         while (model.getUserNumber() != model.getUnknownNumber()) {

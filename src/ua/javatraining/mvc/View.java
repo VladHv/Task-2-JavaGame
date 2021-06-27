@@ -9,13 +9,10 @@ public class View {
     public static final String DIAPASON = "Try next range of numbers - ";
     public static final String GUESS = "Hooray! My hidden number: ";
     public static final String ATTEMPTS = "\nAmount of your correct attempts: ";
+    public static final String USERNUMBERS = "\nYour number(s) - ";
 
     public void printMessage (String message) {
         System.out.println(message);
     }
-
-    public void printMessage (int message) {
-        System.out.println(message);
-    }
-
+    
 }
