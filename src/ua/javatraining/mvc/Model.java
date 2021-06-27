@@ -12,7 +12,7 @@ public class Model {
     private int userNumber;
     private final int unknownNumber = minNumber + (int)Math.floor(Math.random() * (maxNumber - minNumber));
 
-    List <Integer> allUserNumbers = new ArrayList<>();
+    private List <Integer> allUserNumbers = new ArrayList<>();
 
 
     public int getUnknownNumber (){
@@ -38,7 +38,7 @@ public class Model {
     public String Result() {
         attempts++;
         allUserNumbers.add(userNumber);
-                if (userNumber > unknownNumber) {
+        if (userNumber > unknownNumber) {
             maxNumber = userNumber;
             return View.NUMBER_LESS + "Your previous number(s) - " + allUserNumbers + ". " + View.DIAPASON + "from " + minNumber + " to " + maxNumber;
         } else if (userNumber < unknownNumber) {
